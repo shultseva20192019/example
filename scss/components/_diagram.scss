@@ -1,0 +1,208 @@
+.diagram {
+    position: relative;
+    left: 24.5%;
+    width: 59%;
+    min-height: rem-calc(480px);
+    border-radius: 38px;
+    border: 3px dotted $primary-color;
+    font-size: rem-calc(13px);
+
+    @include media('>=tablet') {
+        font-size: rem-calc(16px);
+    }
+    
+    .line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: rem-calc(310px);
+        border-top: 3px dotted $primary-color;
+        border-bottom: 3px dotted $primary-color;
+
+        @include media('>=tablet') {
+            top: 54%;
+            height: rem-calc(302px);
+        }
+    }
+
+    .question {
+        position: absolute;
+        left: -15px;
+        padding: rem-calc(15px 5px);
+        max-width: rem-calc(120px);
+        border-radius: $border-radius;
+        background-color: $white;
+        text-align: center;
+        box-shadow: 0 0 0 5px $whisper;
+
+        @include media('>=tablet') {
+            padding: rem-calc(15px 25px);
+            max-width: rem-calc(331px);
+            left: 0;
+        }
+
+        &.small {
+            max-width: rem-calc(120px);
+
+            @include media('>=tablet') {
+                max-width: rem-calc(294px);
+            }
+        }
+
+        &.one {
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        &.two {
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            @include media('>=tablet') {
+                top: 55%;
+            }
+        }
+
+        &.three {
+            top: 100%;
+            transform: translate(-50%, -30%);
+
+            @include media('>=tablet') {
+                top: 104%;
+                padding: rem-calc(35px 25px);
+            }
+        }
+    }
+
+    .answer {
+        position: absolute;
+        width: rem-calc(45px);
+        height: rem-calc(45px);
+        border-radius: 50%;
+        background-image: $linear-gradient;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        box-shadow: 0 0 0 5px $whisper;
+
+        @include media('>=tablet') {
+            width: rem-calc(72px);
+            height: rem-calc(72px);
+        }
+
+        &.black-bg {
+            background-image: none;
+            background-color: $oxford-blue;
+        }
+
+        &.one {
+            top: 0;
+            left: 45%;
+            transform: translateY(-50%);
+
+            @include media('>=tablet') {
+                left: 54%;
+            }
+        }
+
+        &.two {
+            top: 50%;
+            left: 45%;
+            transform: translateY(-50%);
+
+            @include media('>=tablet') {
+                top: 55%;
+                left: 55%;
+            }
+        }
+
+        &.three {
+            top: 18%;
+            left: 0;
+            transform: translate(-50%, -50%);
+
+            @include media('>=tablet') {
+                top: 26%;
+            }
+        }
+
+        &.four {
+            top: 81%;
+            left: 0;
+            transform: translate(-50%, -50%);
+
+            @include media('>=tablet') {
+                top: 81%;
+            }
+        }
+    }
+
+    .brand {
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        padding: rem-calc(12px);
+        border-radius: $border-radius;
+        background-color: $primary-color;
+        box-shadow: 0 0 0 5px $whisper;
+
+        @include media('>=tablet') {
+            padding: rem-calc(28px 36px);
+        }
+
+        &.lite {
+            background-color: $olivine;
+        }
+
+        &.one {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%) rotate(-90deg);
+
+            @include media('>=tablet') {
+                top: 54%;
+                transform: translate(50%, -50%) rotate(0);
+            }
+        }
+
+        &.two {
+            top: 114%;
+            right: 0;
+            transform: translate(50%, 10%) rotate(-90deg);
+
+            @include media('>=tablet') {
+                top: 105%;
+                transform: translate(50%, 10%);
+                padding: rem-calc(27px 25px);
+            }
+        }
+    }
+
+    .type {
+        position: absolute;
+        color: $oxford-blue;
+        text-transform: uppercase;
+        background-color: $whisper;
+        box-shadow: 0 0 0 5px $whisper;
+
+        &.one {
+            top: 100.5%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+        }
+
+        &.two {
+            top: 110%;
+            left: 62%;
+            transform: translate(-50%, 60%);
+
+            @include media('>=tablet') {
+                top: 117.5%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

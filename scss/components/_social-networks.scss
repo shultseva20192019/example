@@ -1,0 +1,27 @@
+.social-networks {
+    padding: 0;
+    margin: rem-calc(0 -3px);
+    display: flex;
+    align-items: center;
+
+    li {
+        margin: rem-calc(0 3px);
+
+        &::before {
+            content: none;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 6px;
+        border: 2px solid $oxford-blue;
+        border-radius: 3px;
+        color: inherit;
+
+        &:hover {
+            color: $whisper;
+            background-color: $oxford-blue;
+        }
+    }
+}

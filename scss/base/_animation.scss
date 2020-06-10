@@ -1,0 +1,25 @@
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        margin-top: -100px;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        margin-right: -100px;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        margin-right: 0;
+    }
+}

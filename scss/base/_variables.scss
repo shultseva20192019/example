@@ -1,0 +1,65 @@
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$gray: #999;
+$black: #000;
+$white: #fff;
+$whisper: #f6f7fa;
+$green: #008a53;
+$light-green:#3e9f66;
+$ocean-green: #36b271;
+$chateau-green: #419963;
+$olivine: #93C780;
+$oxford-blue: #343b4e;
+$comet: #52556b;
+$primary-color: $green;
+$secondary-color: $white;
+
+$linear-gradient: linear-gradient(to right, $ocean-green 0%, $chateau-green 100%);
+$border-radius: 8px;
+
+$base-font-sans-serif: 'Helvetica', 'Arial', 'Helvetica Neue', sans-serif;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// Body
+$base-text-color: $oxford-blue;
+$base-background-color: $white;
+$font-size-base: 0.875rem;
+$line-height-base: 1.625;
+$base-font-family: $base-font-sans-serif;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+// Liks
+$base-link-color: $olivine;
+
+// Buttons 
+$btn-color: $white;
+$btn-background: $linear-gradient;
+$btn-padding: 1.108em 1.10em;
+$btn-font-size: 0.875rem;
+
+// Forms
+$form-element-padding: 1.25em 1.40em;
+$form-element-border-color: $oxford-blue;
+$form-element-focus-border-color: $primary-color;
+$placeholder-color: $gray;
+
+// Headers
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.2rem;
+$h4-font-size: 1.15rem;
+$h5-font-size: 17px !default;
+$h6-font-size: 15px !default;
+
+$headings-font-family: 'Montserrat', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$headings-color: $green;
+
+
+$animation-speed: 0.3s;

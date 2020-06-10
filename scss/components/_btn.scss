@@ -1,0 +1,61 @@
+.btn {
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: $btn-background;
+    padding: 1em;
+    font-size: rem-calc(12px);
+    font-family: $headings-font-family;
+    font-weight: 700;
+    color: $btn-color;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: rem-calc(188px);
+    transition: 0.3s linear;
+
+    &:hover {
+        animation: show 0.3s linear forwards;
+        color: $oxford-blue;
+    }
+
+    @keyframes show {
+        0% {
+            background-image: linear-gradient(to right, $ocean-green 0%, $chateau-green 100%);
+        }
+        20% {
+            background-image: linear-gradient(to right, $ocean-green 20%, $chateau-green 80%);
+        }
+        40% {
+            background-image: linear-gradient(to right, $ocean-green 40%, $chateau-green 60%);
+        }
+        60% {
+            background-image: linear-gradient(to right, $ocean-green 60%, $chateau-green 40%);
+        }
+        80% {
+            background-image: linear-gradient(to right, $ocean-green 80%, $chateau-green 20%);
+        }
+        100% {
+            background-image: linear-gradient(to right, $ocean-green 100%, $chateau-green 0%);
+        }
+    }
+
+    @include media('>=phone') {
+        font-size: $btn-font-size;
+        padding: $btn-padding;
+    }
+
+    &.btn-transparent {
+        border: 1px solid $white;
+        background-image: none;
+
+        &:hover {
+            border-color: $oxford-blue;
+            animation: none;
+            color: $oxford-blue;
+            background-color: rgba($white, 0.4);
+        }
+    }
+
+    &.btn-large {
+        min-width: rem-calc(257px);
+    }
+ }
